@@ -20,7 +20,7 @@ let transition = (color) => {
         document.getElementById('spinunoida').classList.add('spin1ida');
         document.getElementById('spindosida').classList.add('spin2ida');
         document.getElementById('spintresida').classList.add('spin3ida');
-        setTimeout( () => {window.location="https://quotereact-kappa.vercel.app/";},2250)
+        setTimeout( () => {window.location="https://quotereact-rose.vercel.app//";},2250)
     }
     if(window.scrollY == 0 && color == 3){
         document.getElementById('primeroida').classList.add('unoida');
