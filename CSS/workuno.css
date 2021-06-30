@@ -1,0 +1,13 @@
+@import url(/CSS/loadvenida.css);
+.video{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+
+}
+.video1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

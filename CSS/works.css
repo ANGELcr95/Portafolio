@@ -1,0 +1,52 @@
+
+/* This section works */
+.works{
+    display:block;
+    text-align: center;
+    width: 100%;
+}
+.works article{
+    width: 60%;
+    position: relative;
+    margin:3rem auto ;
+    width: 60%;
+    height: 19rem;
+    cursor: pointer;
+}
+.works article div{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 19rem;
+    background: linear-gradient(90deg, rgb(22, 45, 65), rgba(54, 92, 150, 0.384));
+    z-index: 99; 
+    transition: 0.8s;
+}
+.works article img {
+    position: absolute;
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+    left: 0;
+  }
+  .works p{
+    position: absolute;
+    color: grey;
+    top: -5%;
+    left: 80%;
+    font-size: 7.5rem;
+    font-weight: 900;
+    width: 25%;
+    height: 0%;
+    transition: 0.8s;
+} 
+  .works article:hover div{
+    width: 0;
+    transition: 1.5s;
+  }
+  .works article:hover p{
+    color:white;
+    height: 30%;
+    background: linear-gradient(180deg, rgb(136, 136, 136), rgba(255, 255, 255, 0));
+    transition: 1s;
+  }

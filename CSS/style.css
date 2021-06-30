@@ -1,0 +1,137 @@
+/* This global presenction */
+@import url(/CSS/loadida.css);
+@import url(/CSS/works.css);
+@import url(/CSS/about.css);
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth ;
+    user-select: none;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+}
+section{
+    margin-bottom: 2rem;
+    overflow-x: hidden;
+}
+
+/* This section presenction */
+.presentacion{
+    position: relative;
+    background-image: url("../img/banner.jpg");
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+}
+.menu{
+    position: fixed;
+    height:10vh;
+    padding: 5vh 0 0 70%;
+    z-index: 102;
+}
+.menu:hover{
+    background-color: rgba(126, 126, 126, 0.158);
+    transition: 1s;
+    color:white;
+}
+.menu a{
+    color: grey;
+    font-size: 1.3rem;
+    margin-right:3rem; 
+}
+.redes {
+    display:block;
+    width:40%;
+    height: 70vh;
+    margin-top: 20%;
+    margin-left: 60%;
+    transition: 0.7s;
+}
+.redes .git{
+    object-fit: cover;
+    width: 44%;
+    margin-left: 47%;
+    margin-bottom: 2%;
+    opacity: 0.8;
+    transition: 0.7s;
+}
+.redes .linkedine{
+    object-fit: cover;
+    width: 40%;
+    margin-left: 33%;
+    margin-bottom: 4%;
+    opacity: 0.8;
+    transition: 0.7s;
+}
+.redes .facebook{
+    object-fit: cover;
+    width: 43%;
+    margin-left: 23%;
+    margin-bottom: 4%;
+    opacity: 0.8;
+    transition: 0.7s;
+}
+.redes .instagram{
+    object-fit: cover;
+    width: 42%;
+    margin-left: 33%;
+    opacity: 0.8;
+    transition: 0.7s;
+}
+.redes .whatsapp{
+    object-fit: cover;
+    width: 43%;
+    margin-left: 49%;
+    opacity: 0.8;
+    transition: 0.7s;
+}
+.redes:hover,.redes .linkedine:hover,.redes .git:hover,.redes .instagram:hover,.redes .linkedine:hover, .redes .whatsapp:hover,.redes .facebook:hover{
+    opacity: 1;
+    cursor: pointer;
+    width: 58%;
+    border: white solid 0.2rem;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+.redes:hover{
+    width:45%;
+    margin-left: 50%;
+    transition: 0.2s;
+    border: rgba(248, 248, 248, 0) solid 0rem;
+}
+.banner{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.banner div{
+    margin: 1rem;
+}
+.banner img{
+    border-radius: 12.5rem;
+    height: 18rem;
+}
+.banner h2{
+    font-size: 2rem;
+    color: white;
+}
+.banner p{
+    font-size: 1.3rem;
+    color: rgb(211, 211, 211);
+}
+.boton{
+    margin-top: 2rem;
+    width: 6rem;
+    height: 3rem;
+    background-color: rgb(158, 158, 158);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* This section scroll  */
