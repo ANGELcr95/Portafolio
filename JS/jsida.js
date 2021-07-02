@@ -1,7 +1,17 @@
         // Declariacion de variables globales 
 let up = document.querySelectorAll('.works a')
 let colour = document.getElementById('primeroida')
-        
+let menu = document.querySelector('.redes')
+
+menu.addEventListener('mouseover',() => {
+    document.getElementById('p').classList.remove('desactivo');
+    document.getElementById('p').classList.add('activo');
+})
+ 
+menu.addEventListener('mouseout',() => {
+    document.getElementById('p').classList.add('desactivo');
+    document.getElementById('p').classList.remove('activo');
+})   
         // Animacion de ida
 let transition = (color) => {
     if(window.scrollY == 0 && color == 1){
