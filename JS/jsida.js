@@ -40,6 +40,24 @@ let transition = (color) => {
         document.getElementById('spindosida').classList.add('spin2ida');
         document.getElementById('spintresida').classList.add('spin3ida');
         setTimeout( () => {window.location="https://automatica-sas.vercel.app/";},2250)
+    }
+    if(window.scrollY == 0 && color == 4){
+        document.getElementById('primeroida').classList.add('unoida');
+        document.getElementById('segundoida').classList.add('dosida');
+        document.getElementById('spinprincipalida').classList.add('spinida');
+        document.getElementById('spinunoida').classList.add('spin1ida');
+        document.getElementById('spindosida').classList.add('spin2ida');
+        document.getElementById('spintresida').classList.add('spin3ida');
+        setTimeout( () => {window.location="https://www.youtube.com/watch?v=tCodXFWW2gU";},2250)
+    } 
+    if(window.scrollY == 0 && color == 5){
+        document.getElementById('primeroida').classList.add('unoida');
+        document.getElementById('segundoida').classList.add('dosida');
+        document.getElementById('spinprincipalida').classList.add('spinida');
+        document.getElementById('spinunoida').classList.add('spin1ida');
+        document.getElementById('spindosida').classList.add('spin2ida');
+        document.getElementById('spintresida').classList.add('spin3ida');
+        setTimeout( () => {window.location="https://www.youtube.com/watch?v=xaK9Jwv46W8";},2250)
     }  
 }
 

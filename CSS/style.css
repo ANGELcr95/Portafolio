@@ -58,10 +58,7 @@ section{
     }
 }
 
-.menu:hover {
-    background-color: rgba(63, 63, 63, 0.466);
-    transition: 1s;
-}
+
 /* .menu a{
     color: grey;
     font-size: 1.3rem;
