@@ -39,7 +39,7 @@ let transition = (color) => {
         document.getElementById('spinunoida').classList.add('spin1ida');
         document.getElementById('spindosida').classList.add('spin2ida');
         document.getElementById('spintresida').classList.add('spin3ida');
-        setTimeout( () => {window.location="https://automatica-sas.vercel.app/";},2250)
+        setTimeout( () => {window.location="https://weather-mauve-eight.vercel.app/";},2250)
     }
     if(window.scrollY == 0 && color == 4){
         document.getElementById('primeroida').classList.add('unoida');
