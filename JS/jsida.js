@@ -48,7 +48,7 @@ let transition = (color) => {
         document.getElementById('spinunoida').classList.add('spin1ida');
         document.getElementById('spindosida').classList.add('spin2ida');
         document.getElementById('spintresida').classList.add('spin3ida');
-        setTimeout( () => {window.location="https://www.youtube.com/watch?v=tCodXFWW2gU";},2250)
+        setTimeout( () => {window.location="https://www.uniquindio.edu.co/";},2250)
     } 
     if(window.scrollY == 0 && color == 5){
         document.getElementById('primeroida').classList.add('unoida');
@@ -57,7 +57,7 @@ let transition = (color) => {
         document.getElementById('spinunoida').classList.add('spin1ida');
         document.getElementById('spindosida').classList.add('spin2ida');
         document.getElementById('spintresida').classList.add('spin3ida');
-        setTimeout( () => {window.location="https://www.youtube.com/watch?v=xaK9Jwv46W8";},2250)
+        setTimeout( () => {window.location="https://intenalco.edu.co/portal/";},2250)
     }  
 }
 
@@ -92,15 +92,15 @@ let innerTexto = (id) =>{
     switch (id) {
         case "safety":
             divText.classList.add("active")
-            divText.innerHTML = "<h4>Segurida<h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa odio animi repellendus debitis, doloremque eius adipisci </p>"
+            divText.innerHTML = "<h4>Seguridad <h4><p>Yo contribuyo con la seguridad de los colaboradores, soy asertiva en la implementación de técnicas de concientización, como capacitaciones lúdicas, incentivando el autocuidado y al trabajo en equipo para la prevención de accidentes y enfermedades laborales....✏️</p>"
             break;
         case "salud":
             divText.classList.add("active")
-            divText.innerHTML = "<h4>Salud<h4><p>r sit amet, consectetur adipisicing elit. Ipsa odio animi repellendus debitis, doloremque eius adipisci </p>"
+            divText.innerHTML = "<h4>Salud<h4><p>Intervengo en la promoción de la salud de los colaboradores 🍎, incentivándolos a la aplicación de hábitos de vida,  basados en una alimentación sana, rutinas de ejercicio, higiene del sueño, aprovechamiento de los tiempos libre en familia, también por medio de campanas para la prevención de enfermedades que puedan afectar su bienestar...🥼</p>"
             break;
         case "ambiental":
             divText.classList.add("active")
-            divText.innerHTML = "<h4>Ambiental<h4><p> sit amet, consectetur adipisicing elit. Ipsa odio animi repellendus debitis, doloremque eius adipisci </p>"
+            divText.innerHTML = "<h4>Ambiental<h4><p>El cuidado y la preservación del medio ambiente 🌍, por medio de la disposición correcta de residuos, este es un aspecto fundamental en las buenas prácticas para la preservación de nuestro planeta, uso racional de recursos hídricos 💧 y energía ⚡, sumado a las capacitaciones en tema como conciencia ambiental huella de carbono...</p>"
             break;
         default:
             divText.classList.remove("active")

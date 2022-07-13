@@ -1,15 +1,15 @@
 .about{
-    background: rgb(20, 29, 29);
-    margin-bottom: 0;
-}
+  background: rgb(159,85,255);
+  background: linear-gradient(90deg, rgba(159,85,255,1) 0%, rgba(152,82,255,0.969625350140056) 56%, rgba(132,0,255,0.6502976190476191) 100%);}
 .about h2{
     text-align: center;
     color: white;
     padding: 1rem 0;
 }
 .about p{
-    color: rgba(221, 221, 221, 0.596);
+    color: rgb(218, 218, 218);
     padding: 0 10rem 3rem;
+    font-size: 1.5rem;
 }
 
 .lds-ripple {

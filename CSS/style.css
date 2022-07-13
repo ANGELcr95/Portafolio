@@ -7,7 +7,6 @@
 *{
     box-sizing: border-box;
     scroll-behavior: smooth ;
-    user-select: none;
     
     text-decoration: none;
     margin: 0;
@@ -133,7 +132,7 @@ section{
     opacity: 1;
     cursor: pointer;
     width: 58%;
-    border: white solid 0.2rem;
+    border: rgb(179, 0, 255) solid 0.4rem;
     transition: 0.3s;
     border-radius: 50%;
 }
