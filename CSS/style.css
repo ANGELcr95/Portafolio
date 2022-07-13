@@ -1,0 +1,372 @@
+/* This global presenction */
+@import url(/CSS/loadida.css);
+@import url(/CSS/works.css);
+@import url(/CSS/about.css);
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat:wght@600&family=Open+Sans:wght@500&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lato&family=Montserrat:wght@600&family=Open+Sans:wght@500&family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth ;
+    user-select: none;
+    
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Concert One', cursive;
+}
+
+p,
+span,
+b{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+
+section{
+    margin-bottom: 2rem;
+    overflow-x: hidden;
+}
+
+/* This section presenction */
+.presentacion{
+    position: relative;
+    background-image: url("../img/banner-karen.jpg");
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.menu{
+    position: fixed;
+    height:10vh;
+    padding: 5vh 0 0 70%;
+    z-index: 102;
+    top: 0;
+}
+.desactivo{
+    display: none;
+}
+
+.activo{
+    align-items: center;
+    color: rgba(255, 255, 255, 0);
+    width: 100vw;
+    height:10vh;
+    position:fixed;
+    z-index: 100;
+    text-align: center;
+    font-size: 3rem;
+    z-index: 103;
+    animation-duration: 2s;
+    animation-name:cambio;
+    animation-fill-mode: forwards;
+}
+@keyframes cambio {
+    from{
+
+    }
+    to{
+        color: rgb(255, 255, 255);
+    }
+}
+
+
+/* .menu a{
+    color: grey;
+    font-size: 1.3rem;
+    margin-right:3rem; 
+} */
+
+.redes {
+    display:block;
+    width:40%;
+    height: 70vh;
+    margin-left: 60%;
+    transition: 0.7s;
+}
+.redes .git{
+    object-fit: cover;
+    width: 44%;
+    margin-left: 47%;
+    margin-bottom: 2%;
+    opacity: 0.8;
+    transition: 0.7s;
+}
+.redes .linkedine{
+    object-fit: cover;
+    width: 40%;
+    margin-left: 33%;
+    margin-bottom: 4%;
+    opacity: 0.8;
+    transition: 0.7s;
+}
+.redes .facebook{
+    object-fit: cover;
+    width: 43%;
+    margin-left: 23%;
+    margin-bottom: 4%;
+    opacity: 0.8;
+    transition: 0.7s;
+}
+.redes .instagram{
+    object-fit: cover;
+    width: 42%;
+    margin-left: 33%;
+    opacity: 0.8;
+    transition: 0.7s;
+}
+.redes .whatsapp{
+    object-fit: cover;
+    width: 43%;
+    margin-left: 49%;
+    opacity: 0.8;
+    transition: 0.7s;
+}
+.redes:hover,.redes .linkedine:hover,.redes .git:hover,.redes .instagram:hover,.redes .linkedine:hover, .redes .whatsapp:hover,.redes .facebook:hover{
+    opacity: 1;
+    cursor: pointer;
+    width: 58%;
+    border: white solid 0.2rem;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+.redes:hover{
+    width:45%;
+    margin-left: 50%;
+    transition: 0.2s;
+    border: rgba(248, 248, 248, 0) solid 0rem;
+}
+.banner{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+}
+.banner div{
+    margin: 1rem;
+}
+.banner img{
+    border-radius: 12.5rem;
+    height: 18rem;
+}
+
+.picture img{
+    border: 1rem solid rgb(179, 0, 255);
+}
+.banner h2{
+    font-size: 4rem;
+    color: rgb(255, 0, 251);
+}
+.banner p{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: rgb(179, 0, 255);
+}
+.boton{
+    margin-top: 2rem;
+    width: 6rem;
+    height: 3rem;
+    background-color: rgb(179, 0, 255);
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 0.8;
+    border-color: white;
+}
+.boton:hover{
+    background-color: white;
+    color: rgb(179, 0, 255);
+    border-color: rgb(179, 0, 255);
+}
+
+/* This section scroll  */
+
+
+footer .redes-sociales {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	padding: 20px;
+	flex-wrap: wrap;
+}
+
+footer .redes-sociales a {
+	display: block;
+	width: 60px;
+	height: 60px;
+	background: #000;
+	color: #fff;
+	margin: 20px;
+	text-align: center;
+	border-radius: 100px;
+	transition: .3s ease all;
+}
+
+footer .redes-sociales .twitter {background: #1da1f2;}
+footer .redes-sociales .facebook {background: #3b5998;}
+footer .redes-sociales .instagram {background: #c13584;}
+
+footer .redes-sociales a i {
+	font-size: 20px;
+	line-height: 60px;
+}
+
+footer .contenedor-icono:hover a {
+	animation: icono .5s ease;
+}
+
+@keyframes icono {
+	from {
+		transform: rotate3d(0,0,0,0);
+	}
+	to {
+		transform: rotate3d(0,1,0, 360deg);
+	}
+}
+
+
+.mano-hover{
+    width: 2em;
+    margin: 1rem 0;
+    animation: hover 6s ease;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes hover {
+    0% { 
+       transform:  translate(0px);
+    } 15% { 
+        transform:  translate(50px); 
+    } 30% { 
+        transform:  translate(100px);
+    } 50% { 
+        transform:  translate(150px);
+    } 60% { 
+        transform:  translate(100px);
+     } 75% { 
+         transform:  translate(50px); 
+     } 100% { 
+         transform:  translate(0px);
+     }
+}
+@keyframes icono {
+	from {
+		transform: rotate3d(0,0,0,0);
+	}
+	to {
+		transform: rotate3d(0,1,0, 360deg);
+	}
+}
+
+footer .creado-por {
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 14px;
+	color: #c13584;
+}
+
+footer .creado-por a {color: #000;}
+footer .creado-por a:hover {text-decoration: underline;}
+
+
+
+/* ------------------------- */
+/* Mediaqueries */
+/* ------------------------- */
+@media screen and (max-width: 700px) {
+	.grid .item {
+		width: calc(50% - 20px);
+	}
+
+	header .barra-busqueda {
+		width: 100%;
+	}
+}
+
+.icons_banner{
+    display: flex;
+}
+
+.icons_banner-img img{
+    width: 100%;
+}
+
+.icons_banner-img:hover{
+   transform: scale(1.2);
+   cursor: pointer;
+   transition: 0.5s;
+}
+
+
+.mano-hover-div{
+    display: flex;
+    justify-items: center;
+}
+
+.mano-hover-instruc{
+    margin-left: 180px;
+}
+
+.text-instsuc {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 2rem;
+    margin: 0 auto;
+    border-right: 0.15em solid rgb(255, 0, 251);
+    animation: typing 6s steps(38) 1s infinite normal both, blink 1s steps(1) infinite;
+  }
+  @keyframes typing {
+   0% {
+      width: 0;
+    } 60%{
+        width: 100%;
+    }
+    100% {
+        width: 100%;
+    }
+  }
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+
+.inner-cart{
+    position: absolute;
+    width: 70%;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    height: auto;
+    background-color:white ;
+    z-index: 3;
+    
+}
+.inner-cart.active{
+    border: 4px solid rgb(255, 0, 251);
+    box-shadow: inset 2px ;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+.inner-cart h4{
+    color: rgb(255, 0, 251);
+}
+.inner-cart p{
+    color: rgb(179, 0, 255);
+}
+
