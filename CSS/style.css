@@ -392,7 +392,7 @@ footer .creado-por a:hover {text-decoration: underline;}
     }
 
     .banner h2{
-        font-size: 30px;
+        font-size: 38px;
     }
 
     .banner p{
@@ -424,6 +424,10 @@ footer .creado-por a:hover {text-decoration: underline;}
 
     .works article{
         width: 90%;
+    }
+
+    .boton{
+        margin-top: 0;
     }
 }
 
