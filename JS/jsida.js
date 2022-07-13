@@ -88,7 +88,8 @@ let icons = document.querySelectorAll(".icons_banner-img")
 
 let innerTexto = (id) =>{
     let divText = document.getElementById("inner-cart")
-
+    console.log(id);
+    
     switch (id) {
         case "safety":
             divText.classList.add("active")
@@ -109,16 +110,38 @@ let innerTexto = (id) =>{
     }
 
 }
+icons.forEach((icon) => {
+    icon.addEventListener('mouseout', () => {
+        if (window.screen.width > 900) {
+            innerTexto()
+        }
+    })
+})
 
+let select = document.getElementById("presentacion_id")
+
+select.addEventListener('click', (e) => {
+    if (window.screen.width < 900) {
+        innerTexto(e.target.id)
+    }
+})
 
 icons.forEach((icon) => {
     icon.addEventListener('mouseover', (e) => {
-        innerTexto(e.target.id)
+        if (window.screen.width > 900) {
+            innerTexto(e.target.id)
+        }
     })
 })
 
 icons.forEach((icon) => {
-    icon.addEventListener('mouseout', () => {
-        innerTexto()
+    icon.addEventListener('click', (e) => {
+        if (window.screen.width < 900) {
+            innerTexto(e.target.id)
+        }
     })
 })
+
+
+
+
