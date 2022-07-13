@@ -372,7 +372,7 @@ footer .creado-por a:hover {text-decoration: underline;}
 
 /* ------  responsive moobile -------- */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
 
     .menu{
         position: fixed;
@@ -385,6 +385,45 @@ footer .creado-por a:hover {text-decoration: underline;}
     .about p{
         padding: 1rem;
         text-align: center;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner h2{
+        font-size: 30px;
+    }
+
+    .banner p{
+        font-size:15px;
+    }
+
+    .picture  img {
+        height: 13rem;
+    }
+
+    .banner div{
+        margin: 0;
+    }
+
+    .mano-hover-div {
+        display: flex;
+        justify-items: center;
+        flex-direction: column-reverse;
+        margin-top: 1rem;
+    }
+
+    .mano-hover-instruc{
+        margin: 0;
+    }
+
+    .text-instsuc{
+        font-size: 21px;
+    }
+
+    .works article{
+        width: 90%;
     }
 }
 
