@@ -30,7 +30,7 @@ let transition = (color) => {
         document.getElementById('spinunoida').classList.add('spin1ida');
         document.getElementById('spindosida').classList.add('spin2ida');
         document.getElementById('spintresida').classList.add('spin3ida');
-        setTimeout( () => {window.location="https://proyectodo.vercel.app/";},2250)
+        setTimeout( () => {window.location="https://github.com/ANGELcr95/backend-spinobrac";},2250)
     }
     if(window.scrollY == 0 && color == 3){
         document.getElementById('primeroida').classList.add('unoida');
@@ -39,7 +39,7 @@ let transition = (color) => {
         document.getElementById('spinunoida').classList.add('spin1ida');
         document.getElementById('spindosida').classList.add('spin2ida');
         document.getElementById('spintresida').classList.add('spin3ida');
-        setTimeout( () => {window.location="https://weather-mauve-eight.vercel.app/";},2250)
+        setTimeout( () => {window.location="https://mybleen.com/";},2250)
     }
     if(window.scrollY == 0 && color == 4){
         document.getElementById('primeroida').classList.add('unoida');
@@ -82,3 +82,66 @@ function generarNuevoColor(){
 }
 
 generarNuevoColor()
+
+
+let icons = document.querySelectorAll(".icons_banner-img")
+
+let innerTexto = (id) =>{
+    let divText = document.getElementById("inner-cart")
+    console.log(id);
+    
+    switch (id) {
+        case "safety":
+            divText.classList.add("active")
+            divText.innerHTML = "<h4><b>React / React-native </b></h4><p><b> Distribuidora Negociemos</b>, una aplicación react donde el alcance del proyecto es renderizar más de 1000 productos para determinados clientes, rol de LT dev y deployment del proyecto, implementando librerías para a gestión de data redux(Thunk), material UI etc..... <br /><b> Spinobrac</b>, Estos son algunos de los proyectos más relevantes y desafiantes sumados a otros proyectos, igual he hecho soporte en otras tecnologías como Frameworks como Laravel principalmente siguiendo arquitectura mvc.<br />Estos son algunos de los proyectos mas relevantes y desafiantes sumados a otros proyectos, igual he hecho soporte en otras tecnologias como Frameworks como Laravel principalmente siguiendo arquitectura mvc.</p>"
+            break;
+        case "salud":
+            divText.classList.add("active")
+            divText.innerHTML = "<h4><b>JS/ Python/LIQUID </b></h4><p><b> E-Learning Coomeva SARLAFT</b>,  fue un proyecto bastante retador desarrollado principalmente en vanilla usando AJAX,desplegado en  plataforma de Coomeva para la  capacitación  de sus empleados, particularmente me sentí muy satisfecho por el resultado visualmente es muy bonito, didáctico con juegos y muchas funcionalidades más.....  <br /><b> Bot Twitter</b>, proyecto desarrollado en py en el cual se encargaba de responder desplegando listado de opciones, consumíamos la api de Twitter,se automatiza bastante, ya que la tasa de mensajes era muy alta.... aplicamos analítica de datos<br /><b> Shopify</b>, multiples proyectos han sido desarrollados y he dado soporte Moderato, Bleen, Le frug store parisien....es un preprocesador para CMS shopify sintax unifica HTML y JS, en etiquetas custom.<br /> Son algunos de los proyectos en los cuales he trabajado, aplicando metodología clean code, SOLID... preprocesadores como SASS, Boostrap,Handlebars entre otras. </p>"
+            break;
+        case "ambiental":
+            divText.classList.add("active")
+            divText.innerHTML = "<h4><b>Node Js/PHP</b></h4><p><b> API Spinobrag</b>, una API desplegada en Heroku, como GDB mysql usamos FS para almacenar img`s y demas data proporcionada por los colaboradores de la empresa, usando ORM como sequalize o mysql2. <br /><b> API Registro ventas</b>, proyecto desarrollado en php el cual gestiona inventarios de productos, ventas y demas data que usa como GDB MariaDB. <br /><b> ApI Tasks</b>, LP backend Node Js y GDB mogondb.<br />De igual forma ocasionalmente desarrolle en Ruby para ejecutar scripts custom para shopify....</p>"
+            break;
+        default:
+            divText.classList.remove("active")
+            divText.innerHTML = ""
+            break;
+    }
+
+}
+icons.forEach((icon) => {
+    icon.addEventListener('mouseout', () => {
+        if (window.screen.width > 900) {
+            innerTexto()
+        }
+    })
+})
+
+let select = document.getElementById("presentacion_id")
+
+select.addEventListener('click', (e) => {
+    if (window.screen.width < 900) {
+        innerTexto(e.target.id)
+    }
+})
+
+icons.forEach((icon) => {
+    icon.addEventListener('mouseover', (e) => {
+        if (window.screen.width > 900) {
+            innerTexto(e.target.id)
+        }
+    })
+})
+
+icons.forEach((icon) => {
+    icon.addEventListener('click', (e) => {
+        if (window.screen.width < 900) {
+            innerTexto(e.target.id)
+        }
+    })
+})
+
+
+
+

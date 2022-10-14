@@ -2,16 +2,31 @@
 @import url(/CSS/loadida.css);
 @import url(/CSS/works.css);
 @import url(/CSS/about.css);
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat:wght@600&family=Open+Sans:wght@500&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lato&family=Montserrat:wght@600&family=Open+Sans:wght@500&family=Roboto&display=swap');
 *{
     box-sizing: border-box;
     scroll-behavior: smooth ;
-    user-select: none;
-    font-family: 'Open Sans', sans-serif;
+    
     text-decoration: none;
     margin: 0;
     padding: 0;
     /* overflow-x: hidden; */
 }
+
+h1,
+h2,
+h3 {
+    font-family: 'Concert One', cursive;
+}
+
+p,
+span,
+b{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+
 section{
     margin-bottom: 2rem;
     overflow-x: hidden;
@@ -24,12 +39,15 @@ section{
     background-size:cover;
     background-position: center;
     height: 100vh;
+    display: flex;
+    align-items: center;
 }
 .menu{
     position: fixed;
     height:10vh;
     padding: 5vh 0 0 70%;
     z-index: 102;
+    top: 0;
 }
 .desactivo{
     display: none;
@@ -69,7 +87,6 @@ section{
     display:block;
     width:40%;
     height: 70vh;
-    margin-top: 20%;
     margin-left: 60%;
     transition: 0.7s;
 }
@@ -126,11 +143,10 @@ section{
     border: rgba(248, 248, 248, 0) solid 0rem;
 }
 .banner{
-    width: 100%;
-    height: 90vh;
     display: flex;
     justify-content:center;
     align-items: center;
+    margin: auto;
 }
 .banner div{
     margin: 1rem;
@@ -156,6 +172,7 @@ section{
     border-radius: 20px;
     cursor: pointer;
     opacity: 0.8;
+    border-color: white;
 }
 
 /* This section scroll  */
@@ -203,6 +220,41 @@ footer .contenedor-icono:hover a {
 	}
 }
 
+
+.mano-hover{
+    width: 2em;
+    margin: 1rem 0;
+    animation: hover 6s ease;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes hover {
+    0% { 
+       transform:  translate(0px);
+    } 15% { 
+        transform:  translate(50px); 
+    } 30% { 
+        transform:  translate(100px);
+    } 50% { 
+        transform:  translate(150px);
+    } 60% { 
+        transform:  translate(100px);
+     } 75% { 
+         transform:  translate(50px); 
+     } 100% { 
+         transform:  translate(0px);
+     }
+}
+@keyframes icono {
+	from {
+		transform: rotate3d(0,0,0,0);
+	}
+	to {
+		transform: rotate3d(0,1,0, 360deg);
+	}
+}
+
 footer .creado-por {
 	margin-bottom: 40px;
 	text-align: center;
@@ -212,6 +264,8 @@ footer .creado-por {
 
 footer .creado-por a {color: #000;}
 footer .creado-por a:hover {text-decoration: underline;}
+
+
 
 /* ------------------------- */
 /* Mediaqueries */
@@ -225,3 +279,151 @@ footer .creado-por a:hover {text-decoration: underline;}
 		width: 100%;
 	}
 }
+
+.icons_banner{
+    display: flex;
+}
+
+.icons_banner-img img{
+    width: 100%;
+}
+
+.icons_banner-img:hover{
+   transform: scale(1.2);
+   cursor: pointer;
+   transition: 0.5s;
+}
+
+
+.mano-hover-div{
+    display: flex;
+    justify-items: center;
+}
+
+.mano-hover-instruc{
+    margin-left: 180px;
+}
+
+.text-instsuc {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 2rem;
+    margin: 0 auto;
+    border-right: 0.15em solid gray;
+    color: white;
+    animation: typing 6s steps(38) 1s infinite normal both, blink 1s steps(1) infinite;
+    -webkit-animation: typing 6s steps(38) 1s infinite normal both, blink 1s steps(1) infinite;
+}
+  @keyframes typing {
+   0% {
+      width: 0;
+    } 60%{
+        width: 100%;
+    }
+    100% {
+        width: 100%;
+    }
+  }
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+
+.inner-cart{
+    position: absolute;
+    width: 70%;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: auto;
+    background-color:white ;
+    z-index: 3;
+    
+}
+.inner-cart h4{
+    text-align: center;
+}
+.inner-cart p{
+    text-align: left;
+}
+.inner-cart.active{
+    border: 4px solid gainsboro;
+    box-shadow: inset 2px ;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+.inner-cart h4{
+    color: rgb(62, 62, 62);
+}
+.inner-cart p{
+    color: black;
+}
+
+
+/* ------  responsive moobile -------- */
+
+@media screen and (max-width: 900px) {
+
+    .menu{
+        position: fixed;
+        height:10vh;
+        padding: 5vh 0 0 0%;
+        z-index: 102;
+        top: 0;
+    }
+
+    .about p{
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner h2{
+        font-size: 38px;
+    }
+
+    .banner p{
+        font-size:15px;
+    }
+
+    .picture  img {
+        height: 13rem;
+    }
+
+    .banner div{
+        margin: 0;
+    }
+
+    .mano-hover-div {
+        display: flex;
+        justify-items: center;
+        flex-direction: column-reverse;
+        margin-top: 1rem;
+    }
+
+    .mano-hover-instruc{
+        margin: 0;
+    }
+
+    .text-instsuc{
+        font-size: 21px;
+    }
+
+    .works article{
+        width: 90%;
+    }
+
+    .boton{
+        margin-top: 0;
+    }
+}
+
